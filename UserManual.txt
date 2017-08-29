@@ -1,0 +1,16 @@
+﻿Welcome to iShell
+(IShell Hastily Eliminates Lazy Learners)
+
+	This short user manual will serve as a description for the use of iShell for the beginning user of a Unix/Linux/Minix system. Although this program was written for the Minix operating system, it may work for various other Unix/Linux systems to date.
+	
+	The iShell program is modeled after BASH (Bourne Again Shell) and is in essence a shell for your operating system. If you are unfamiliar with a shell it is best to describe it as a command line interface to interact with the operating system. Various commands such as “pwd” and “ls” can be typed into most shells and receive a response from the operating system. For example, instead of double clicking on the folder “foo” to open that folder from your current directory, you would simple type “cd foo”, and your directory would be changed.
+
+	In order to run a program in a shell command for Minix and many other Unix based systems, the user can navigate to the directory a program is in and type ./[name of program], without the brackets. This will have the shell request the operating system execute the program. As a matter of fact, if you are reading this in a Minix system, a shell has requested this file be run and displayed on the screen for your convenience. 
+
+	In iShell, there are six built in commands that are executed from within the program that do not relay on default Minix to have defined. These are: env, setenv, unsetenv, cd, history, and exit. All of these are explained in detail in the ReadMe.txt file that was included. These six commands will execute, if given the proper parameters, regardless of their preexistence in Minix. 
+
+	Outside of these six commands are everything else that is possible to run. In order to do this, the PATH environment variable contains all the paths (plus the user's current directory path) that iShell will check for the existence of the user's command request. For example, when the user requests an “ls”, which is a display of the contents of the current directory, iShell checks to see if “ls” is a an executable from all the paths in the environment PATH variable. If it has success, it will run the command from that path and provide the user with the expected results. However, if the requested command is not found in the one of the PATH variable's paths, or in the current directory, an error will be displayed to the user as the requested command could not be executed.
+
+	Another cool thing about shells is input/output (I/O) redirection and pipping. Without going into deep details about either one, it is sufficient to say that the display of a command can be manipulated to be output to a file using “>”(example: ls > temp.dat) or the input of a program can be manipulated to the contents of a file with “<” (example: prog1 < input.dat). Pipping is another breed of monster where the output of one side of a pipe is the input of another and is used by the character “|” (example: ls | grep x). This provides functionality unprecedented with most graphical user interfaces. 
+	
+	For the greater details involving specifics to iShell and some of its limitations, please refer to the ReadMe.txt file that accompanied the iShell program. I hope you enjoy iShell about as much as I enjoyed coding it. Thanks for giving it a go.
