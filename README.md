@@ -34,6 +34,6 @@ Special notes:
 
 
 Special thanks:
-opengroup.org - for all the documentation on all these functions I had never seen before.
-raspberryginger.com - Amazing resources for the programmer that gets stuck and needs another way to look at things. Especcially in Minix. Thanks.
-Vern Paxon - For creating lex. No way I could have written this without it.
+- opengroup.org - for all the documentation on all these functions I had never seen before.
+- raspberryginger.com - Amazing resources for the programmer that gets stuck and needs another way to look at things. Especcially in Minix. Thanks.
+- Vern Paxon - For creating lex. No way I could have written this without it.
